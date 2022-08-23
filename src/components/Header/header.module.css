@@ -1,0 +1,11 @@
+.header {
+  background-color: var(--gray-700);
+  width: 100%;
+  height: 20rem;
+}
+
+.img {
+  display: grid;
+  place-items: center;
+  height: 100%;
+}

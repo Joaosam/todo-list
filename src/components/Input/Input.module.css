@@ -1,0 +1,62 @@
+.inputTask {
+  display: flex;
+  justify-content: center;
+  height: 5.4rem;
+  margin-top: -3rem;
+  gap: 0.8rem;
+  width: 100%;
+}
+
+.inputTask > input {
+  width: 50%;
+  background-color: var(--gray-500);
+  border: none;
+  border-radius: 8px;
+  padding: 1.6rem;
+  color: var(--gray-200);
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.30) 0px 3px 6px, rgba(0, 0, 0, 0.50) 0px 3px 6px;
+  font-size: 1.6rem;
+  transition: .3s;
+}
+
+.inputTask > input:focus {
+  box-shadow: rgba(94, 96, 206, 0.30) 0px 3px 6px, rgba(94, 96, 206, 0.50) 0px 3px 6px;
+}
+
+.inputTask > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  width: 9rem;
+  background-color: var(--blue-dark);
+  border: none;
+  border-radius: 8px;
+  color: var(--gray-100);
+  font-weight: 700;
+  cursor: pointer;
+  transition: filter 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.30) 0px 3px 6px, rgba(0, 0, 0, 0.50) 0px 3px 6px;
+  font-size: 1.4rem;
+}
+
+.inputTask > button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.inputTask > button:not(:disabled):hover {
+  filter: brightness(1.2);
+}
+
+@media (max-width: 768px) {
+  .inputTask {
+    width: 95%;
+    transform: translateX(2.5%);
+  }
+
+  .inputTask > input {
+    width: 95%;
+  }
+}

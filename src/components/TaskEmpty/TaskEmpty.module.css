@@ -1,0 +1,42 @@
+.container {
+  display: grid;
+  place-items: center;
+}
+
+.task {
+  width: 73.6rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+  padding-top: 6.4rem;
+  width: 50%;
+}
+
+.imgTask {
+  display: grid;
+  place-items: center;
+  margin-bottom: 1.6rem;
+}
+
+.imgTask > img {
+  width: 5.6rem;
+}
+
+.description {
+  text-align: center;
+  color: var(--gray-300);
+  font-size: 1.6rem;
+  line-height: 140%;
+}
+
+.description > p:nth-child(1) {
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .task {
+    width: 85%;
+  }
+}
