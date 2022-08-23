@@ -1,54 +1,57 @@
-# Sobre o projeto
+<h1 align="center">
+  ToDo List 📋
+</h1>
 
-{url projeto}
+<p align="center">
+  <a href="#-sobre-o-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-conceitos-utilizados-no-desenvolvimento">Conceitos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias-utilizadas">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-executar-o-projeto">Executar o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-licença">Licença</a>
+</p>
+
+# 🚧 Sobre o projeto
+
+Preview: https://todo-list-joaosam.vercel.app/
 
 Primeiro desafio da trilha de ReactJS do Ignite.
 
-Aplicação de controle de tarefas no estilo **to-do list**.
+Aplicação de controle de tarefas no estilo **todo list**.
 Layout disponibilizado no Figma [Layout](<https://www.figma.com/file/lmpOULoPakf24H7vO98EaU/ToDo-List-(Copy)?node-id=0%3A1> 'Layout no Figma').
 
-## Requisitos
+## 🛠️ Funcionalidades
 
 - Adicionar uma nova tarefa
 - Marcar e desmarcar uma tarefa como concluída
 - Remover uma tarefa da listagem
 - Mostrar o progresso de conclusão das tarefas
 
-# Conceitos Utilizados no Desenvolvimento
+# 📚 Conceitos Utilizados no Desenvolvimento
 
 - Estados
 - Imutabilidade do estado
 - Listas e chaves no ReactJS
 - Propriedades
 - Componentização
-- Local Storage(Extra)
+- Local Storage (Extra)
 
-## Layout
+## 🎨 Layout
 
-<img  src = '{URL imagem preview}'>
+<img src=".github/preview-todolist.png" width="100%">
 
-# Tecnologias utilizadas
+# 🚀 Tecnologias utilizadas
 
-## Front end
+- CSS Modules
+- ReactJS
+- TypeScript
 
-- ReactJS Com Typescript
-
-## Implantação em produção
-
-- Front end web: Vercel
-
-# Como executar o projeto
-
-## Front end web
+# 💻 Como executar o projeto
 
 Pré-requisitos: npm / yarn
 
 ```bash
 # clonar repositório
-git clone {URL repositório}
-
-# entrar na pasta do projeto front end web
-cd to-do
+git clone https://github.com/Joaosam/todo-list.git
 
 # instalar dependências
 npm install
@@ -56,3 +59,14 @@ npm install
 # executar o projeto
 npm rum dev
 ```
+
+## 📝 Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/Joaosam/todo-list/blob/master/LICENSE)
+
+<br />
+
+---
+
+Feito com ♥ by Joaosam
