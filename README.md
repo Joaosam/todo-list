@@ -50,14 +50,17 @@ Layout disponibilizado no Figma [Layout](<https://www.figma.com/file/lmpOULoPakf
 Pré-requisitos: npm / yarn
 
 ```bash
-# clonar repositório
+# Clonar repositório
 git clone https://github.com/Joaosam/todo-list.git
 
-# instalar dependências
+# Navegar até a pasta
+cd todo-list
+
+# Instalar dependências
 npm install
 
-# executar o projeto
-npm rum dev
+# Executar o projeto
+npm run dev
 ```
 
 ## 📝 Licença
