@@ -37,7 +37,7 @@ Layout disponibilizado no Figma [Layout](<https://www.figma.com/file/lmpOULoPakf
 
 ## 🎨 Layout
 
-<img src=".github/preview-todolist.png" width="100%">
+<img src=".github/preview-todo-list.png" width="100%">
 
 # 🚀 Tecnologias utilizadas
 
