@@ -7,6 +7,7 @@ import { ChangeEvent, useState, useEffect } from "react";
 import { TaskEmpty } from "../TaskEmpty/TaskEmpty";
 
 import styles from "./Input.module.css";
+import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 
 type InfoTasks = {
   name: string;
@@ -63,6 +64,14 @@ export function Input() {
     setTasks(newListDeletedTask);
   }
 
+  function handleOnDragEnd(result: any) {
+    const items = Array.from(tasks);
+    const [reorderedItem] = items.splice(result.source.index, 1);
+    items.splice(result.destination.index, 0, reorderedItem);
+
+    setTasks(items);
+  }
+
   const isInputEmpty = nameTask.length === 0;
 
   return (
@@ -84,20 +93,43 @@ export function Input() {
         </button>
       </div>
       <Info tasks={tasks} />
-      {tasks.length > 0 ? (
-        tasks.map((task) => (
-          <Task
-            key={task.id}
-            id={task.id}
-            descriptionTask={task.name}
-            checkedTask={task.isCompleted}
-            onCompleteTask={completeTask}
-            onDeleteTask={deleteTask}
-          />
-        ))
-      ) : (
-        <TaskEmpty />
-      )}
+      <DragDropContext onDragEnd={handleOnDragEnd}>
+        <Droppable droppableId="tasks">
+          {(provided) => (
+            <ul
+              className={styles.tasks}
+              {...provided.droppableProps}
+              ref={provided.innerRef}
+            >
+              {tasks.length > 0 ? (
+                tasks.map((task, i) => (
+                  <Draggable key={task.id} draggableId={task.id} index={i}>
+                    {(provided) => (
+                      <li
+                        className={styles.task}
+                        ref={provided.innerRef}
+                        {...provided.draggableProps}
+                        {...provided.dragHandleProps}
+                      >
+                        <Task
+                          id={task.id}
+                          descriptionTask={task.name}
+                          checkedTask={task.isCompleted}
+                          onCompleteTask={completeTask}
+                          onDeleteTask={deleteTask}
+                        />
+                      </li>
+                    )}
+                  </Draggable>
+                ))
+              ) : (
+                <TaskEmpty />
+              )}
+              {provided.placeholder}
+            </ul>
+          )}
+        </Droppable>
+      </DragDropContext>
     </div>
   );
 }
