@@ -17,7 +17,7 @@ Preview: https://todo-list-joaosam.vercel.app/
 Primeiro desafio da trilha de ReactJS do Ignite.
 
 Aplicação de controle de tarefas no estilo **todo list**.
-Layout disponibilizado no Figma [Layout](<https://www.figma.com/file/lmpOULoPakf24H7vO98EaU/ToDo-List-(Copy)?node-id=0%3A1> 'Layout no Figma').
+Layout disponibilizado no Figma [Layout](<https://www.figma.com/file/lmpOULoPakf24H7vO98EaU/ToDo-List-(Copy)?node-id=0%3A1> "Layout no Figma").
 
 ## 🛠️ Funcionalidades
 
@@ -37,7 +37,7 @@ Layout disponibilizado no Figma [Layout](<https://www.figma.com/file/lmpOULoPakf
 
 ## 🎨 Layout
 
-<img src=".github/preview-todolist.png" width="100%">
+<img src=".github/preview-todo-list.png" width="100%">
 
 # 🚀 Tecnologias utilizadas
 
