@@ -15,13 +15,14 @@
   padding: 1.6rem;
   color: var(--gray-200);
   outline: none;
-  box-shadow: rgba(0, 0, 0, 0.30) 0px 3px 6px, rgba(0, 0, 0, 0.50) 0px 3px 6px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 6px, rgba(0, 0, 0, 0.5) 0px 3px 6px;
   font-size: 1.6rem;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .inputTask > input:focus {
-  box-shadow: rgba(94, 96, 206, 0.30) 0px 3px 6px, rgba(94, 96, 206, 0.50) 0px 3px 6px;
+  box-shadow: rgba(94, 96, 206, 0.3) 0px 3px 6px,
+    rgba(94, 96, 206, 0.5) 0px 3px 6px;
 }
 
 .inputTask > button {
@@ -37,7 +38,7 @@
   font-weight: 700;
   cursor: pointer;
   transition: filter 0.3s;
-  box-shadow: rgba(0, 0, 0, 0.30) 0px 3px 6px, rgba(0, 0, 0, 0.50) 0px 3px 6px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 6px, rgba(0, 0, 0, 0.5) 0px 3px 6px;
   font-size: 1.4rem;
 }
 
@@ -50,6 +51,12 @@
   filter: brightness(1.2);
 }
 
+.container li > svg {
+  position: absolute;
+  left: 20%;
+  margin-top: 10px;
+}
+
 @media (max-width: 768px) {
   .inputTask {
     width: 95%;
@@ -58,5 +65,10 @@
 
   .inputTask > input {
     width: 95%;
+  }
+
+  .container li > svg {
+    left: 1%;
+    width: 24px;
   }
 }

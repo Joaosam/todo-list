@@ -1,4 +1,4 @@
-import { PlusCircle } from "phosphor-react";
+import { DotsSix, PlusCircle } from "phosphor-react";
 import { v4 as uuidv4 } from "uuid";
 
 import { Task } from "../Task/Task";
@@ -111,6 +111,10 @@ export function Input() {
                         {...provided.draggableProps}
                         {...provided.dragHandleProps}
                       >
+                        {tasks.length > 1 && (
+                          <DotsSix size={32} color="#545454" />
+                        )}
+
                         <Task
                           id={task.id}
                           descriptionTask={task.name}
